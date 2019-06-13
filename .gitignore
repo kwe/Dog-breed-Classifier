@@ -1,2 +1,4 @@
 /data
 *.pt
+*.onnx
+*.mlmodel

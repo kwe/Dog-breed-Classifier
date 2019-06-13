@@ -16,7 +16,7 @@ model.classifier[6] = last_layer
 
 print(model)
 
-state_dict = torch.load('model_transfer.pt')
+state_dict = torch.load('model_transfer.pt', map_location="cpu")
 model.load_state_dict(state_dict)
 
 dummy_input = torch.randn(1,3,244,244)
