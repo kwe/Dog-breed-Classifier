@@ -9,5 +9,5 @@ model_file = open(model_in, 'rb')
 model_proto = onnx_pb.ModelProto()
 model_proto.ParseFromString(model_file.read())
 coreml_model = convert(model_proto, image_input_names=[
-                       '0'], image_output_names=['186'])
+                       '0'], image_output_names=['77'])
 coreml_model.save(model_out)
